@@ -1,16 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 import GithubMark from '../../images/GitHub-Mark.svg';
+import { ColorCollection } from '../../utils/ColorCollection';
+import { FontWeight } from '../../utils/FontWeight';
+
 
 const FooterWrapper = styled.div`
-    background-color: black;
+    background-color: rgba(0,0,0,0.5);
     width: 100%;
+    height: 30px;
 `;
 const Profile = styled.div`
     padding: 5px;
     color: white;
     font-size: 15px;
     text-align: center;
+    font-weight: ${FontWeight.LIGHTER};
 `;
 
 const Footer = () => {

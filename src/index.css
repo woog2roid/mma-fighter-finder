@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  background: url(./images/ufc_octagon.jpg) no-repeat center center fixed; 
+  background-size: cover;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

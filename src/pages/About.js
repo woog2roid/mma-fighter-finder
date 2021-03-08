@@ -1,7 +1,6 @@
 import React from 'react';
-import Footer from '../components/Footer/Footer';
-import Nav from '../components/Header/Nav';
-import Introduction from '../components/Header/Introduction';
+import Footer from '../components/common/Footer';
+import Nav from '../components/common/Nav';
 
 const About = () => {
     return (

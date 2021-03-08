@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { ColorCollection } from '../../color/ColorCollection';
+import { ColorCollection } from '../../utils/ColorCollection';
+import { FontWeight } from '../../utils/FontWeight';
 
 const NavWrapper = styled.div`
     background-color: ${ColorCollection.CRIMSON_RED};
@@ -12,7 +13,7 @@ const NavWrapper = styled.div`
 `;
 const NavToMain = styled(Link)`
     font-size: 30px;
-    font-weight: bold;
+    font-weight: ${FontWeight.BOLD};
     font-style: italic;
     padding: 0px 10px 0px 10px;
     color: inherit;
@@ -24,7 +25,7 @@ const NavToMain = styled(Link)`
 const NavItems = styled(Link)`
     font-size: 15px;
     align-content: center;
-    font-weight: 500;
+    font-weight: ${FontWeight.NORMAL};
     padding: 0px 3px 0px 3px;
     float: right;
     color: inherit;
