@@ -4,16 +4,18 @@ import styled from 'styled-components';
 import { ColorCollection } from '../../utils/ColorCollection';
 import { FontWeight } from '../../utils/FontWeight';
 
-const ContentsBlock = styled.div`
-    min-height: calc(100vh - 80px);
+const Wrapper = styled.div`
+    min-height: calc(100vh - 300px);
+    margin: 110px 200px 110px 200px;
+    background-color: ${ColorCollection.DARK_GRAY};
 `;
 const MainDescription = styled.div`
-    padding-top: 140px;
+    padding-top: 40px;
     text-align: center;
     color: white;
     font-size: 30px;
     font-weight: ${FontWeight.LGIHT};
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 `;
 const Circle = styled.div`
     background-color:${ColorCollection.CRIMSON_RED};
@@ -36,13 +38,13 @@ const Nav = styled(Link)`
     }
 `;
 
-const Contents = () => {
+const MainContents = () => {
     return (
-        <ContentsBlock>
-            <MainDescription>FIND MMA FIGHTER'S INFO AND WIN THE BAT</MainDescription>
+        <Wrapper>
+            <MainDescription>GET MMA FIGHTERS' INFO AND WIN THE BAT</MainDescription>
             <Circle><Nav to="/search">SEARCH YOUR FIGHTER</Nav></Circle>
-        </ContentsBlock>
+        </Wrapper>
     );
 };
 
-export default Contents;
+export default MainContents;
