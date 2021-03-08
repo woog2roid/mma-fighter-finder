@@ -14,7 +14,7 @@ const MainDescription = styled.div`
     text-align: center;
     color: white;
     font-size: 30px;
-    font-weight: ${FontWeight.LGIHT};
+    font-weight: ${FontWeight.BOLD};
     padding-bottom: 25px;
 `;
 const Circle = styled.div`
@@ -42,7 +42,7 @@ const MainContents = () => {
     return (
         <Wrapper>
             <MainDescription>GET MMA FIGHTERS' INFO AND WIN THE BAT</MainDescription>
-            <Circle><Nav to="/search">SEARCH YOUR FIGHTER</Nav></Circle>
+            <Circle><Nav to="/search">SEARCH FIGHTERS</Nav></Circle>
         </Wrapper>
     );
 };
