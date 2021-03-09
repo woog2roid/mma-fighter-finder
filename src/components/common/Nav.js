@@ -27,7 +27,6 @@ const NavItems = styled(Link)`
     align-content: center;
     font-weight: ${FontWeight.NORMAL};
     padding: 0px 3px 0px 3px;
-    float: right;
     color: inherit;
     text-decoration: none;
     &:hover {
