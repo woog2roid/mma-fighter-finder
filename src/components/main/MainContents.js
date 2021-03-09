@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 import { ColorCollection } from '../../utils/ColorCollection';
 import { FontWeight } from '../../utils/FontWeight';
@@ -52,7 +52,8 @@ const MainContents = () => {
         e => {
             e.preventDefault();
             history.push(`/search?fighter=${e.target.input.value}`);
-        }, []);
+        }, [history]
+    );
 
     return (
         <Wrapper>
