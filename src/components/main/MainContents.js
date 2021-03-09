@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useCallback } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 import { ColorCollection } from '../../utils/ColorCollection';
 import { FontWeight } from '../../utils/FontWeight';
@@ -26,23 +26,41 @@ const Circle = styled.div`
     text-align:center;
     margin:0 auto;
 `;
-const Nav = styled(Link)`
+const Text = styled.div`
+    padding-top: 95px;
     font-size:20px;
     font-weight: ${FontWeight.NORMAL};
     text-decoration: none;
     color: white;
     vertical-align:middle;
-    line-height:300px;
-    &:hover {
-        color: ${ColorCollection.CRIMSON_RED};
+`;
+const Input = styled.input`
+    height: 50px;
+    width: 240px;
+    opacity: 0.9;
+    font-size: 15px;
+    border : 2px solid ${ColorCollection.CRIMSON_RED};
+    border-radius : 5px;
+    &:focus {
+        outline: none;
     }
 `;
 
 const MainContents = () => {
+    const history = useHistory();
+    const onSubmit = useCallback(
+        e => {
+            e.preventDefault();
+            history.push(`/search?fighter=${e.target.input.value}`);
+        }, []);
+
     return (
         <Wrapper>
             <MainDescription>GET MMA FIGHTERS' INFO AND WIN THE BAT</MainDescription>
-            <Circle><Nav to="/search">SEARCH FIGHTERS</Nav></Circle>
+            <Circle>
+                <Text>SEARCH FIGHTERS</Text>
+                <form onSubmit={onSubmit}><Input name="input"/></form>
+            </Circle>
         </Wrapper>
     );
 };
