@@ -68,7 +68,7 @@ const MainContents = () => {
             <MainDescription>GET MMA FIGHTERS' INFO AND WIN THE BAT</MainDescription>
             <Circle>
                 <Text>SEARCH FIGHTERS</Text>
-                <form onSubmit={onSubmit}><Input name="input"/></form>
+                <form onSubmit={onSubmit}><Input name="input" autoComplete="off"/></form>
             </Circle>
             <Keyword>"I recommend searching by full name or nick name."</Keyword>
             <Keyword>
