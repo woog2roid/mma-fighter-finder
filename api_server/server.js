@@ -32,7 +32,6 @@ const server = createServer((req, res) => {
         } else if (cache.has(query.fighter)) {
             const data = cache.get(query.fighter);
             if (!data) { //해당 선수 없음
-                res.statusCode = 404;
                 res.end();
                 return;
             } else { // 정상적인 경우

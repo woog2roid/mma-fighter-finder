@@ -5,8 +5,8 @@ import { ColorCollection } from '../../utils/ColorCollection';
 import { FontWeight } from '../../utils/FontWeight';
 
 const Wrapper = styled.div`
-    min-height: calc(100vh - 300px);
-    margin: 110px 200px 110px 200px;
+    min-height: calc(100vh - 260px);
+    margin: 100px 200px 100px 200px;
     background-color: ${ColorCollection.DARK_GRAY};
 `;
 const MainDescription = styled.div`
@@ -25,6 +25,7 @@ const Circle = styled.div`
     border-radius:150px;
     text-align:center;
     margin:0 auto;
+    margin-bottom: 20px;
 `;
 const Text = styled.div`
     padding-top: 95px;
@@ -45,6 +46,13 @@ const Input = styled.input`
         outline: none;
     }
 `;
+const Keyword = styled.div`
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: ${FontWeight.LIGHTER};
+    font-style: italic;
+`;
 
 const MainContents = () => {
     const history = useHistory();
@@ -62,6 +70,10 @@ const MainContents = () => {
                 <Text>SEARCH FIGHTERS</Text>
                 <form onSubmit={onSubmit}><Input name="input"/></form>
             </Circle>
+            <Keyword>"I recommend searching by full name or nick name."</Keyword>
+            <Keyword>
+                Because the data is parsed and imported from sherdog, you can find it even if you type just a keyword, but accuracy is not guaranteed.
+            </Keyword>
         </Wrapper>
     );
 };
