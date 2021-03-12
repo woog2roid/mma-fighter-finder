@@ -24,7 +24,7 @@ mma 선수들의 정보를 제공하는 사이트
 - [woog2roid/mma-api](https://github.com/woog2roid/mma-api)를 이용해서 api 서버를 제작하였음
   - 원래 쓰려고 생각한 [오픈소스 mma-api](https://github.com/valish/mma-api)가 있었는데 돌아가질 않아서, fork해서 아주 약간 손을 봤다... 크게 손을 본건 아니고...
 - github page를 이용해서 build를 하긴 하였는데, 서버를 여는 것과 관련해서 작업을 전혀 하지 않아서, 선수 검색은 불가능 한 상태로 끝냈는데 조금 아쉽기도 하다...
-  - 근데 서버 열면, api키도 정해야하고 좀 힘들 거 같으면서도 재밌을 듯...?
+  - 근데 서버 열면, 좀 힘들 거 같으면서도 재밌을 듯...?
 
 </details>
 </div>
