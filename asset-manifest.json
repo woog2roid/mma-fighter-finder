@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/mma-fighter-finder/static/css/main.5f579240.chunk.css",
-    "main.js": "/mma-fighter-finder/static/js/main.8098dfd0.chunk.js",
-    "main.js.map": "/mma-fighter-finder/static/js/main.8098dfd0.chunk.js.map",
+    "main.js": "/mma-fighter-finder/static/js/main.a0a79854.chunk.js",
+    "main.js.map": "/mma-fighter-finder/static/js/main.a0a79854.chunk.js.map",
     "runtime-main.js": "/mma-fighter-finder/static/js/runtime-main.070a8988.js",
     "runtime-main.js.map": "/mma-fighter-finder/static/js/runtime-main.070a8988.js.map",
     "static/js/2.04aab013.chunk.js": "/mma-fighter-finder/static/js/2.04aab013.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.070a8988.js",
     "static/js/2.04aab013.chunk.js",
     "static/css/main.5f579240.chunk.css",
-    "static/js/main.8098dfd0.chunk.js"
+    "static/js/main.a0a79854.chunk.js"
   ]
 }
