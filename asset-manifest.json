@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/mma-fighter-finder/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/mma-fighter-finder/static/js/main.0d7f9f1d.chunk.js",
-    "main.js.map": "/mma-fighter-finder/static/js/main.0d7f9f1d.chunk.js.map",
-    "runtime-main.js": "/mma-fighter-finder/static/js/runtime-main.f288215c.js",
-    "runtime-main.js.map": "/mma-fighter-finder/static/js/runtime-main.f288215c.js.map",
-    "static/js/2.c94d4f6a.chunk.js": "/mma-fighter-finder/static/js/2.c94d4f6a.chunk.js",
-    "static/js/2.c94d4f6a.chunk.js.map": "/mma-fighter-finder/static/js/2.c94d4f6a.chunk.js.map",
-    "static/js/3.4a441dff.chunk.js": "/mma-fighter-finder/static/js/3.4a441dff.chunk.js",
-    "static/js/3.4a441dff.chunk.js.map": "/mma-fighter-finder/static/js/3.4a441dff.chunk.js.map",
+    "main.css": "/mma-fighter-finder/static/css/main.5f579240.chunk.css",
+    "main.js": "/mma-fighter-finder/static/js/main.8098dfd0.chunk.js",
+    "main.js.map": "/mma-fighter-finder/static/js/main.8098dfd0.chunk.js.map",
+    "runtime-main.js": "/mma-fighter-finder/static/js/runtime-main.070a8988.js",
+    "runtime-main.js.map": "/mma-fighter-finder/static/js/runtime-main.070a8988.js.map",
+    "static/js/2.04aab013.chunk.js": "/mma-fighter-finder/static/js/2.04aab013.chunk.js",
+    "static/js/2.04aab013.chunk.js.map": "/mma-fighter-finder/static/js/2.04aab013.chunk.js.map",
     "index.html": "/mma-fighter-finder/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/mma-fighter-finder/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.c94d4f6a.chunk.js.LICENSE.txt": "/mma-fighter-finder/static/js/2.c94d4f6a.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/mma-fighter-finder/static/media/logo.6ce24c58.svg"
+    "static/css/main.5f579240.chunk.css.map": "/mma-fighter-finder/static/css/main.5f579240.chunk.css.map",
+    "static/js/2.04aab013.chunk.js.LICENSE.txt": "/mma-fighter-finder/static/js/2.04aab013.chunk.js.LICENSE.txt",
+    "static/media/GitHub-Mark.2652e38f.svg": "/mma-fighter-finder/static/media/GitHub-Mark.2652e38f.svg",
+    "static/media/index.css": "/mma-fighter-finder/static/media/ufc_octagon.b32d8365.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f288215c.js",
-    "static/js/2.c94d4f6a.chunk.js",
-    "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.0d7f9f1d.chunk.js"
+    "static/js/runtime-main.070a8988.js",
+    "static/js/2.04aab013.chunk.js",
+    "static/css/main.5f579240.chunk.css",
+    "static/js/main.8098dfd0.chunk.js"
   ]
 }
