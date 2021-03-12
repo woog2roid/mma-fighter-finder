@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div>
       <Switch>
-        <Route path="/mma-fihgter-finder" component={Main} exact={true}/>
+        <Route path="/mma-fighter-finder" component={Main} exact={true}/>
         <Route path="/mma-fighter-finder/about" component={About} />
         <Route path="/mma-fighter-finder/search" component={Search}/>
         <Route component={NotFound} />
