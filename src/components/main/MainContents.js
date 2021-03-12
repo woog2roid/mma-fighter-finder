@@ -59,7 +59,7 @@ const MainContents = () => {
     const onSubmit = useCallback(
         e => {
             e.preventDefault();
-            history.push(`/search?fighter=${e.target.input.value}`);
+            history.push(`/mma-0fighter-finder/search?fighter=${e.target.input.value}`);
         }, [history]
     );
 
