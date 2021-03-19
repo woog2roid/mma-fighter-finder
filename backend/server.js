@@ -7,7 +7,7 @@
 
 const { createServer } = require('http');
 const { parse } = require('url');
-const { fighter } = require("mma");
+const { fighter } = require('./lib/mma');
 
 const hostname = '127.0.0.1';
 const port = 3000;
