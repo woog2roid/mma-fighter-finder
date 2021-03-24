@@ -2,9 +2,6 @@
 mma 선수들의 정보를 제공하는 사이트
 
 ## 실행장면
-> API 서버를 열어두지 않아서, 배포된 링크에서 실제로 선수를 찾을 수는 없다.  
-> - api_server를 다운받아서 직접 node로 실행하면 로컬서버로 작동하긴 한다.
-
 - 선수를 검색하면  이렇게 전적이 나온다.  
 
 ![](https://user-images.githubusercontent.com/54667577/110948546-d527a900-8384-11eb-8fda-ae3ea57ceba5.png)

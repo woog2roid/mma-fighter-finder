@@ -53,7 +53,7 @@ const SearchContents = ({ location }) => {
                     ignoreQueryPrefix: true
                 });
                 const fighter = query.fighter;
-                const response = await axios.get(`http://127.0.0.1:3000?fighter=${fighter}`);
+                const response = await axios.get(`http://193.123.228.52:3000?fighter=${fighter}`);
                 setData(response.data);
                 setLoading(false);
             } catch (e) {
