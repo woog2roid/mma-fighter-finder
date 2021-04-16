@@ -12,7 +12,6 @@ const Wrapper = styled.div`
 const Main = styled.a`
     font-size: 25px;
     font-weight: ${FontWeight.NORMAL};
-    color: white;
     text-decoration: none;
 `;
 const Method = styled.div`

@@ -5,7 +5,6 @@ import { FontWeight } from '../../utils/FontWeight';
 import FightEvents from './FightEvents';
 
 const Wrapper = styled.div`
-    color: white;
     text-align: center;
     align-content: center;
 `;

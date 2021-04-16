@@ -5,10 +5,9 @@ import { ColorCollection } from '../../utils/ColorCollection';
 import { FontWeight } from '../../utils/FontWeight';
 
 const AboutWrapper = styled.div`
-    min-height: calc(100vh - 400px);
+    height: calc(100vh - 400px);
     margin: 140px 200px 140px 200px;
     padding: 20px;
-    color: white;
     background-color: ${ColorCollection.DARK_GRAY};
     text-align: center;
 `;

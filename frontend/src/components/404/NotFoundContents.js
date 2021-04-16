@@ -8,7 +8,6 @@ const Wrapper = styled.div`
     min-height: calc(100vh - 600px);
     margin: 240px 200px 240px 200px;
     padding: 20px;
-    color: white;
     background-color: ${ColorCollection.DARK_GRAY};
     text-align: center;
 `;

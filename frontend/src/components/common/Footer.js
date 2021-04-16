@@ -8,14 +8,29 @@ import { FontWeight } from '../../utils/FontWeight';
 const FooterWrapper = styled.div`
     background-color: ${ColorCollection.DARK_GRAY};
     width: 100%;
-    height: 30px;
+    @media all and (max-width:767px) {
+        height: 25px;
+    }
+    @media all and (min-width:768px) and (max-width:1080px) {
+        height: 30px;
+    }
+    @media all and (min-width:1081px) {
+        height: 30px;
+    }
 `;
 const Profile = styled.div`
     padding: 5px;
-    color: white;
-    font-size: 15px;
     text-align: center;
     font-weight: ${FontWeight.LIGHTER};
+    @media all and (max-width:767px) {
+        font-size: 13px;
+    }
+    @media all and (min-width:768px) and (max-width:1080px) {
+        font-size: 15px;
+    }
+    @media all and (min-width:1081px) {
+        font-size: 15px;
+    }
 `;
 
 const Footer = () => {

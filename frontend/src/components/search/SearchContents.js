@@ -10,7 +10,6 @@ const LoadingWrapper = styled.div`
     min-height: calc(100vh - 680px);
     margin: 280px 200px 280px 200px;
     padding: 20px;
-    color: white;
     background-color: ${ColorCollection.DARK_GRAY};
     text-align: center;
     font-weight: ${FontWeight.BOLD};
@@ -21,10 +20,10 @@ const ErrorWrapper = styled.div`
     min-height: calc(100vh - 660px);
     margin: 270px 200px 270px 200px;
     padding: 20px;
-    color: white;
     background-color: ${ColorCollection.DARK_GRAY};
     text-align: center;
 `;
+
 const ErrorMain = styled.div`
     font-weight: ${FontWeight.BOLD};
     font-size: 40px;
