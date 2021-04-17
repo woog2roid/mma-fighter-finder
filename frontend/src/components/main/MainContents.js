@@ -141,7 +141,7 @@ const MainContents = () => {
 
     return (
         <Wrapper>
-            <MainDescription>GET MMA FIGHTERS' INFO AND WIN THE BAT</MainDescription>
+            <MainDescription>GET MMA FIGHTERS' INFO AND WIN THE BET</MainDescription>
             <Circle>
                 <Text>SEARCH FIGHTERS</Text>
                 <form onSubmit={onSubmit}><Input name="input" autoComplete="off"/></form>
