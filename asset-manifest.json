@@ -1,22 +1,19 @@
 {
   "files": {
-    "main.css": "/mma-fighter-finder/static/css/main.f4e0335a.chunk.css",
-    "main.js": "/mma-fighter-finder/static/js/main.9f103d9a.chunk.js",
-    "main.js.map": "/mma-fighter-finder/static/js/main.9f103d9a.chunk.js.map",
+    "main.js": "/mma-fighter-finder/static/js/main.bb570717.chunk.js",
+    "main.js.map": "/mma-fighter-finder/static/js/main.bb570717.chunk.js.map",
     "runtime-main.js": "/mma-fighter-finder/static/js/runtime-main.070a8988.js",
     "runtime-main.js.map": "/mma-fighter-finder/static/js/runtime-main.070a8988.js.map",
-    "static/js/2.910cfcac.chunk.js": "/mma-fighter-finder/static/js/2.910cfcac.chunk.js",
-    "static/js/2.910cfcac.chunk.js.map": "/mma-fighter-finder/static/js/2.910cfcac.chunk.js.map",
+    "static/js/2.cdaf77d6.chunk.js": "/mma-fighter-finder/static/js/2.cdaf77d6.chunk.js",
+    "static/js/2.cdaf77d6.chunk.js.map": "/mma-fighter-finder/static/js/2.cdaf77d6.chunk.js.map",
     "index.html": "/mma-fighter-finder/index.html",
-    "static/css/main.f4e0335a.chunk.css.map": "/mma-fighter-finder/static/css/main.f4e0335a.chunk.css.map",
-    "static/js/2.910cfcac.chunk.js.LICENSE.txt": "/mma-fighter-finder/static/js/2.910cfcac.chunk.js.LICENSE.txt",
+    "static/js/2.cdaf77d6.chunk.js.LICENSE.txt": "/mma-fighter-finder/static/js/2.cdaf77d6.chunk.js.LICENSE.txt",
     "static/media/GitHub-Mark.58c60e27.svg": "/mma-fighter-finder/static/media/GitHub-Mark.58c60e27.svg",
-    "static/media/index.css": "/mma-fighter-finder/static/media/ufc_octagon.b32d8365.jpg"
+    "static/media/ufc_octagon.b32d8365.jpg": "/mma-fighter-finder/static/media/ufc_octagon.b32d8365.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.070a8988.js",
-    "static/js/2.910cfcac.chunk.js",
-    "static/css/main.f4e0335a.chunk.css",
-    "static/js/main.9f103d9a.chunk.js"
+    "static/js/2.cdaf77d6.chunk.js",
+    "static/js/main.bb570717.chunk.js"
   ]
 }
