@@ -2,25 +2,71 @@ import React from 'react';
 import styled from 'styled-components';
 import { ColorCollection } from '../../utils/ColorCollection';
 import { FontWeight } from '../../utils/FontWeight';
-import { Link } from 'react-router-dom';
 
 const Wrapper = styled.div`
-    min-height: calc(100vh - 600px);
-    margin: 240px 200px 240px 200px;
-    padding: 20px;
     background-color: ${ColorCollection.DARK_GRAY};
     text-align: center;
+    @media all and (max-width:767px) {
+        --min-height: 80px;
+        padding: 5px;
+        --padding: 5px;
+        margin-top: calc((100vh - var(--min-height) -75px - (2 * var(--padding))) / 2);
+        margin-bottom: calc((100vh - var(--min-height) -75px - (2 * var(--padding))) / 2);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    @media all and (min-width:768px) and (max-width:1080px) {
+        --min-height: 80px;
+        padding: 10px;
+        --padding: 10px;
+        margin-top: calc((100vh - var(--min-height) -75px - (2 * var(--padding))) / 2);
+        margin-bottom: calc((100vh - var(--min-height) -75px - (2 * var(--padding))) / 2);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    @media all and (min-width:1081px) {
+        height: 130px;
+        --height: 130px;
+        padding: 20px;
+        --padding: 20px;
+        margin-top: calc((100vh - var(--height) - 80px - (2 * var(--padding))) / 2);
+        margin-bottom: calc((100vh - var(--height) - 80px - (2 * var(--padding))) / 2);
+        margin-left: 140px;
+        margin-right: 140px;
+    }
 `;
 const Main = styled.div`
-    margin-top: 10px;
     font-weight: ${FontWeight.BOLD};
-    font-size: 40px;
     font-style: italic;
+    @media all and (max-width:767px) {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    @media all and (min-width:768px) and (max-width:1080px) {
+        margin-top: 8px;
+        font-size: 30px;   
+    }   
+    @media all and (min-width:1081px) {
+        margin-top: 10px;
+        font-size: 40px;
+    }
 `;
 const Detail = styled.div`
-    margin-top: 15px;
-    font-size: 25px;
     font-weight: ${FontWeight.BOLD};
+    @media all and (max-width:767px) {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+    @media all and (min-width:768px) and (max-width:1080px) {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 15px;   
+    }   
+    @media all and (min-width:1081px) {
+        margin-top: 15px;
+        font-size: 25px;
+    }
 `;
 const NotFoundContents = () => {
     return (

@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import background from '../images/ufc_octagon.jpg';
 
-const global = createGlobalStyle`
+const Global = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
     body {
         margin: 0;
@@ -14,4 +14,4 @@ const global = createGlobalStyle`
     }
 `;
 
-export default global;
+export default Global;

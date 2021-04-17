@@ -37,7 +37,7 @@ const Footer = () => {
     return (
         <FooterWrapper>
             <Profile>
-                Made By Woog2roid <a href='https://github.com/woog2roid/mma-fighter-finder' target='_blank' rel="noreferrer"><img src={ GithubMark } width = '12px' hegiht = '12px'/></a>
+                Made By Woog2roid <a href='https://github.com/woog2roid/mma-fighter-finder' target='_blank' rel="noreferrer"><img src={ GithubMark } alt="" width = '12px' hegiht = '12px'/></a>
             </Profile>
         </FooterWrapper>
     );
