@@ -1,21 +1,35 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import { ColorCollection } from '../../utils/ColorCollection';
 import { FontWeight } from '../../utils/FontWeight';
 import FightEvents from './FightEvents';
 
 const Wrapper = styled.div`
     text-align: center;
-    align-content: center;
 `;
 const Main = styled.div`
-    font-size: 40px;
     font-weight: ${FontWeight.BOLD};
+    @media all and (max-width:767px) {
+        font-size: 25px;
+    }
+    @media all and (min-width:768px) and (max-width:1080px) {
+        font-size: 35px;
+    }
+    @media all and (min-width:1081px) {
+        font-size: 40px;
+    }
 `;
 const Profile = styled.table`
     margin: 0 auto;
-    font-size: 18px;
     font-weight: ${FontWeight.LIGHTER};
+    @media all and (max-width:767px) {
+        font-size: 12px;
+    }
+    @media all and (min-width:768px) and (max-width:1080px) {
+        font-size: 18px;
+    }
+    @media all and (min-width:1081px) {
+        font-size: 18px;
+    }
 `;
 const TR = styled.tr`
 `;
@@ -25,22 +39,56 @@ const TD = styled.td`
  }
 `;
 const RecordMain = styled.div`
-    margin-top: 10px;
-    font-size: 35px;
     font-weight: ${FontWeight.BOLD};
+    @media all and (max-width:767px) {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    @media all and (min-width:768px) and (max-width:1080px) {
+        margin-top: 10px;
+        font-size: 30px;
+    }
+    @media all and (min-width:1081px) {
+        margin-top: 10px;
+        font-size: 35px;
+    }
 `;
 const RecordComain = styled.div`
-    font-size: 20px;
     font-weight: ${FontWeight.NORMAL};
+    @media all and (max-width:767px) {
+        font-size: 14px;
+    }
+    @media all and (min-width:768px) and (max-width:1080px) {
+        font-size: 18px;
+    }
+    @media all and (min-width:1081px) {
+        font-size: 20px;
+    }
 `;
 const RecordDetail = styled.div`
-    font-size: 18px;
     font-weight: ${FontWeight.LIGHTER};
+    @media all and (max-width:767px) {
+        font-size: 12px;
+    }
+    @media all and (min-width:768px) and (max-width:1080px) {
+        font-size: 18px;
+    }
+    @media all and (min-width:1081px) {
+        font-size: 18px;
+    }
 `;
 const FightMain = styled.div`
     margin: 10px 0px 10px 0px;
-    font-size: 35px;
     font-weight: ${FontWeight.BOLD};
+    @media all and (max-width:767px) {
+        font-size: 20px;
+    }
+    @media all and (min-width:768px) and (max-width:1080px) {
+        font-size: 30px;
+    }
+    @media all and (min-width:1081px) {
+        font-size: 35px;
+    }
 `;
 
 const FighterCard = ({ data }) => {

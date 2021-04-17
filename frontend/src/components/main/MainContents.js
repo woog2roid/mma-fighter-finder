@@ -5,53 +5,129 @@ import { ColorCollection } from '../../utils/ColorCollection';
 import { FontWeight } from '../../utils/FontWeight';
 
 const Wrapper = styled.div`
-    min-height: calc(100vh - 260px);
-    margin: 100px 200px 100px 200px;
     background-color: ${ColorCollection.DARK_GRAY};
+    text-align: center;
+    @media all and (max-width:767px) {
+        --min-height: 250px;
+        padding: 5px;
+        --padding: 5px;
+        margin-top: calc((100vh - var(--min-height) -75px - (2 * var(--padding))) / 2);
+        margin-bottom: calc((100vh - var(--min-height) -75px - (2 * var(--padding))) / 2);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    @media all and (min-width:768px) and (max-width:1080px) {
+        --min-height: 300px;
+        padding: 10px;
+        --padding: 10px;
+        margin-top: calc((100vh - var(--min-height) -75px - (2 * var(--padding))) / 2);
+        margin-bottom: calc((100vh - var(--min-height) -75px - (2 * var(--padding))) / 2);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    @media all and (min-width:1081px) {
+        height: 500px;
+        --height: 500px;
+        padding: 20px;
+        --padding: 20px;
+        margin-top: calc((100vh - var(--height) - 80px - (2 * var(--padding))) / 2);
+        margin-bottom: calc((100vh - var(--height) - 80px - (2 * var(--padding))) / 2);
+        margin-left: 100px;
+        margin-right: 100px;
+    }
 `;
 const MainDescription = styled.div`
-    padding-top: 40px;
-    text-align: center;
-    color: white;
-    font-size: 30px;
     font-weight: ${FontWeight.BOLD};
-    padding-bottom: 25px;
+    @media all and (max-width:767px) {
+        padding-top: 10px;
+        font-size: 15px;
+        padding-bottom: 8px;
+    }
+    @media all and (min-width:768px) and (max-width:1080px) {
+        padding-top: 20px;
+        font-size: 25px;
+        padding-bottom: 15px;
+    }
+    @media all and (min-width:1081px) {
+        padding-top: 40px;
+        font-size: 30px;
+        padding-bottom: 25px;
+    }
 `;
 const Circle = styled.div`
     background-color:${ColorCollection.CRIMSON_RED};
-    width:300px;
-    height:300px;
-    opacity: 0.8;
-    border-radius:150px;
-    text-align:center;
     margin:0 auto;
-    margin-bottom: 20px;
+    opacity: 0.8;
+    @media all and (max-width:767px) {
+        width: 180px;
+        height: 180px;
+        border-radius: 180px;
+        margin-bottom: 10px;
+    }
+    @media all and (min-width:768px) and (max-width:1080px) {
+        width: 250px;
+        height: 250px;
+        border-radius: 250px;
+        margin-bottom: 15px;    
+    }
+    @media all and (min-width:1081px) {
+        width:300px;
+        height:300px;
+        border-radius:150px;
+        margin-bottom: 20px;
+    }
 `;
 const Text = styled.div`
-    padding-top: 95px;
-    font-size:20px;
     font-weight: ${FontWeight.NORMAL};
     text-decoration: none;
-    color: white;
-    vertical-align:middle;
+    @media all and (max-width:767px) {
+        padding-top: 60px;
+        font-size: 13px;
+    }
+    @media all and (min-width:768px) and (max-width:1080px) {
+        padding-top: 80px;
+        font-size: 18px;
+    }
+    @media all and (min-width:1081px) {
+        padding-top: 95px;
+        font-size: 20px;
+    }
 `;
 const Input = styled.input`
-    height: 50px;
-    width: 240px;
     opacity: 0.9;
-    font-size: 15px;
     border : 2px solid ${ColorCollection.CRIMSON_RED};
     border-radius : 5px;
     &:focus {
         outline: none;
     }
+    @media all and (max-width:767px) {
+        height: 25px;
+        width: 150px;
+        font-size: 10px;
+    }
+    @media all and (min-width:768px) and (max-width:1080px) {
+        height: 40px;
+        width: 200px;
+        font-size: 12px;
+    }
+    @media all and (min-width:1081px) {
+        height: 50px;
+        width: 240px;
+        font-size: 15px;
+    }
 `;
 const Keyword = styled.div`
-    text-align: center;
-    color: white;
-    font-size: 15px;
     font-weight: ${FontWeight.LIGHTER};
     font-style: italic;
+    @media all and (max-width:767px) {
+        font-size: 8px;
+    }
+    @media all and (min-width:768px) and (max-width:1080px) {
+        font-size: 12px;
+    }
+    @media all and (min-width:1081px) {
+        font-size: 15px;
+    }
 `;
 
 const MainContents = () => {
