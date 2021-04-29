@@ -1,7 +1,9 @@
 # mma-fighter-finder
 mma 선수들의 정보를 제공하는 사이트
 
-__도메인과 관련해서(무료 임대 도메인을 유지하기도 애매하고, 도메인을 구입하자니 괜히 돈만 쓰는 듯 하여) HTTPS를 인증할 수 없어서, HTTP로 서버를 열었다. 그로 인해, 크롬 기준으로 "안전하지 않은 보안 설정"을 허용해주어야 서버와 통신이 가능하다. 혹은, backend를 올려놨으니 로컬로 서버를 돌릴 수도 있지만, 이는 frontend 쪽의 코드도 건드려야 하기 때문에 추천하지 않는다.__
+## 사이트
+- [http://193.123.228.52/mma-fighter-finder](http://193.123.228.52/mma-fighter-finder): 추천하는 URL
+- [https://woog2roid.github.io/mma-fighter-finder](https://woog2roid.github.io/mma-fighter-finder): https 설정과 관련해서 비추천 URL
 
 
 ## 실행장면
