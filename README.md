@@ -1,11 +1,6 @@
 # mma-fighter-finder
 mma 선수들의 정보를 제공하는 사이트
 
-## 사이트
-- [http://193.123.228.52/mma-fighter-finder](http://193.123.228.52/mma-fighter-finder): 추천하는 URL
-- [https://woog2roid.github.io/mma-fighter-finder](https://woog2roid.github.io/mma-fighter-finder): https 설정과 관련해서 비추천 URL
-
-
 ## 실행장면
 - 선수를 검색하면  이렇게 전적이 나온다.  
 
