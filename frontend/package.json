@@ -1,7 +1,6 @@
 {
   "name": "mma-fighter-finder",
   "version": "0.1.0",
-  "private": true,
   "homepage": "https://woog2roid.github.io/mma-fighter-finder",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
