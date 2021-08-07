@@ -5,7 +5,7 @@
     - remove ufc module...
 */
 
-const { createServer } = require('http');
+const { createServer } = require('https');
 const { parse } = require('url');
 const { fighter } = require('./lib/mma');
 
@@ -13,8 +13,14 @@ const hostname = '127.0.0.1';
 const port = 3000;
 let cache = new Map();
 
-const server = createServer((req, res) => {
-    // URL = "127.0.0.1:3000?fighter=jon%20jones"
+const fs = require('fs');
+const options = {
+	key: fs.readFileSync("/etc/letsencrypt/live/server.woog2roid.dev/privkey.pem", "utf8"),
+	cert: fs.readFileSync("/etc/letsencrypt/live/server.woog2roid.dev/cert.pem", "utf8"),
+	ca: fs.readFileSync("/etc/letsencrypt/live/yourdomain.com/chain.pem", "utf8")
+};
+
+const server = createServer(options, (req, res) => {
     let { httpVersion, method, url } = req;
     console.log(`${httpVersion} ${method} ${url}`);
     let { query = {} } = parse(url || '', true);
@@ -44,5 +50,5 @@ const server = createServer((req, res) => {
 });
 
 server.listen(port, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+    console.log(`Server running at https://${hostname}:${port}/`);
 });
