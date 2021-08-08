@@ -17,7 +17,7 @@ const fs = require('fs');
 const options = {
 	key: fs.readFileSync("/etc/letsencrypt/live/server.woog2roid.dev/privkey.pem", "utf8"),
 	cert: fs.readFileSync("/etc/letsencrypt/live/server.woog2roid.dev/cert.pem", "utf8"),
-	ca: fs.readFileSync("/etc/letsencrypt/live/yourdomain.com/chain.pem", "utf8")
+	ca: fs.readFileSync("/etc/letsencrypt/live/server.woog2roid.dev/chain.pem", "utf8")
 };
 
 const server = createServer(options, (req, res) => {
