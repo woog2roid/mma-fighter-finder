@@ -10,8 +10,8 @@ const Wrapper = styled.div`
         --min-height: 80px;
         padding: 5px;
         --padding: 5px;
-        margin-top: calc((100vh - var(--min-height) -75px - (2 * var(--padding))) / 2);
-        margin-bottom: calc((100vh - var(--min-height) -75px - (2 * var(--padding))) / 2);
+        margin-top: 40vh;
+        margin-bottom: 40vh;
         margin-left: 10px;
         margin-right: 10px;
     }
