@@ -125,7 +125,7 @@ const SearchContents = ({ location }) => {
                     ignoreQueryPrefix: true
                 });
                 const fighter = query.fighter;
-                const response = await axios.get(`https://server.woog2roid.dev:3000?fighter=${fighter}`);
+                const response = await axios.get(`${process.env.REACT_APP_SERVER_API}?fighter=${fighter}`);
                 setData(response.data);
                 setLoading(false);
             } catch (e) {

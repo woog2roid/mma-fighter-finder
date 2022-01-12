@@ -8,9 +8,28 @@ const Global = createGlobalStyle`
         font-family: 'Noto Sans KR', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        background-image: url(${background}); 
-        background-size: cover;
+	    height: 100vh;
+		width: 100vw;
+		background-image: url(${background}); 
+		background-position: center;
+		background-attachment: fixed;
         color: white;
+    }
+	
+	@media all and (max-width:767px) {
+        body {
+			background-size: 300% 100%;
+		}
+    }
+    @media all and (min-width:768px) and (max-width:1080px) {
+        body {
+			background-size: 150% 100%;
+		}
+    }
+    @media all and (min-width:1081px) {
+        body {
+			background-size: cover;
+		}
     }
 `;
 
