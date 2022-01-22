@@ -68,7 +68,7 @@ const Detail = styled.div`
         font-size: 25px;
     }
 `;
-const NotFoundContents = () => {
+const NotFound = () => {
     return (
         <Wrapper>
             <Main>404 Not Found</Main>
@@ -77,4 +77,4 @@ const NotFoundContents = () => {
     );
 };
 
-export default NotFoundContents;
+export default NotFound;

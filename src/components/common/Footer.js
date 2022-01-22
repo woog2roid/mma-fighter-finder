@@ -4,7 +4,6 @@ import GithubMark from '../../images/GitHub-Mark.svg';
 import { ColorCollection } from '../../utils/ColorCollection';
 import { FontWeight } from '../../utils/FontWeight';
 
-
 const FooterWrapper = styled.div`
     background-color: ${ColorCollection.DARK_GRAY};
     width: 100%;

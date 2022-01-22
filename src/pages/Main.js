@@ -1,13 +1,13 @@
 import React from 'react';
 import Footer from '../components/common/Footer';
 import Nav from '../components/common/Nav';
-import Contents from '../components/main//MainContents';
+import Search from '../components/main/Search';
 
 const Main = () => {
     return (
         <>
             <Nav />
-            <Contents />
+            <Search />
             <Footer />
         </>
     );

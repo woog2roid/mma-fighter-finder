@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 import { FontWeight } from '../../utils/FontWeight';
 import { ColorCollection } from '../../utils/ColorCollection';
@@ -59,12 +60,18 @@ const Date = styled.div`
         font-size: 12px;
     }
 `;
-const FightEvents = ({ fight }) => {
-    const { opponent, date, method, round, time, referee, url, result } = fight;
-    const URL = "https://www.sherdog.com/" + url;
+const FightEvent = ({ fight }) => {
+	const history = useHistory();
+    const { opponent, date, method, round, time, referee, result } = fight;
+	
+	const goToOpponent = (e) => {
+		e.preventDefault();
+    	history.push(`/mma-fighter-finder/search?fighter=${opponent}`);
+	};
+	
     return (
         <Wrapper result={result}>
-            <Main href={URL} target='_blank' rel="noreferrer">vs {opponent}</Main>
+            <Main onClick={goToOpponent}>vs {opponent}</Main>
             <Method>By {method} at {round}round {time}</Method>
             <Referee>referee : {referee}</Referee>
             <Date>{date}</Date>
@@ -72,4 +79,4 @@ const FightEvents = ({ fight }) => {
     );
 }
 
-export default FightEvents;
+export default FightEvent;

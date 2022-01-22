@@ -4,7 +4,7 @@ import axios from 'axios';
 import styled from 'styled-components';
 import { ColorCollection } from '../../utils/ColorCollection';
 import { FontWeight } from '../../utils/FontWeight';
-import FighterCard from './FighterCard';
+import FighterData from './FighterData';
 
 const LoadingWrapper = styled.div`
     background-color: ${ColorCollection.DARK_GRAY};
@@ -99,7 +99,7 @@ const ErrorDetails = styled.div`
         font-size: 25px;
     }
 `;
-const Wrapper = styled.div`
+const FighterWrapper = styled.div`
     background-color: ${ColorCollection.DARK_GRAY};
     padding: 20px;
     @media all and (max-width:767px) {
@@ -135,7 +135,6 @@ const SearchContents = ({ location }) => {
         fetchData();
     }, []);
     
-    console.log(data);
     if (loading) {
         return (<LoadingWrapper>Loading...</LoadingWrapper>);
     } else if (!data) {
@@ -147,7 +146,9 @@ const SearchContents = ({ location }) => {
         );
     } else {
         return ( 
-            <Wrapper><FighterCard data={data}/></Wrapper>
+            <FighterWrapper>
+				<FighterData data={data}/>
+			</FighterWrapper>
         );
     }
 };

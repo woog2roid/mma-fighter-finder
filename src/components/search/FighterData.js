@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontWeight } from '../../utils/FontWeight';
-import FightEvents from './FightEvents';
+import FightEvent from './FightEvent';
 
 const Wrapper = styled.div`
     text-align: center;
@@ -91,7 +91,7 @@ const FightMain = styled.div`
     }
 `;
 
-const FighterCard = ({ data }) => {
+const FighterData = ({ data }) => {
     const { name, nickname, age, nationality, height, weight_class, association, birthday, hometown, location,
         wins, losses, fights } = data;
     
@@ -118,10 +118,10 @@ const FighterCard = ({ data }) => {
             
             <FightMain>Fights</FightMain>
             {fights.map(( fight, index ) => (
-                <FightEvents key={index} fight={fight}/>
+                <FightEvent key={index} fight={fight}/>
             ))}
         </Wrapper>
     );
 }
 
-export default FighterCard;
+export default FighterData;

@@ -80,7 +80,7 @@ const Details = styled.div`
     }
 `;
 
-const AboutContents = () => {
+const About = () => {
     return (
         <Wrapper>
             <Main>About Us</Main>
@@ -100,4 +100,4 @@ const AboutContents = () => {
     );
 };
 
-export default AboutContents;
+export default About;

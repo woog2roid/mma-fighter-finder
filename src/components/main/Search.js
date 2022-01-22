@@ -136,7 +136,7 @@ const MainContents = () => {
         e => {
             e.preventDefault();
             history.push(`/mma-fighter-finder/search?fighter=${e.target.input.value}`);
-        }, [history]
+        }, []
     );
 
     return (
