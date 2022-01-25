@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { ColorCollection } from '../../utils/ColorCollection';
-import { FontWeight } from '../../utils/FontWeight';
+import { ColorCollection } from '../../styles/ColorCollection';
+import { FontWeight } from '../../styles/FontWeight';
 
 const NavWrapper = styled.div`
     background-color: ${ColorCollection.CRIMSON_RED};

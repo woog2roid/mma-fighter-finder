@@ -1,12 +1,12 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
-import { FontWeight } from '../../utils/FontWeight';
-import { ColorCollection } from '../../utils/ColorCollection';
+import { FontWeight } from '../../styles/FontWeight';
+import { ColorCollection } from '../../styles/ColorCollection';
 
 const Wrapper = styled.div`
     margin-bottom: 10px;
-    background: ${props => props.result === "win" ? ColorCollection.GREEN : ColorCollection.RED};
+    background: ${props => props.result === "win" ? ColorCollection.GREEN : props.result === "loss" ? ColorCollection.RED : ColorCollection.GRAY};
     text-align: ${props => props.result === "win" ? "left" : "right"};
     padding: ${props => props.result === "win" ? "5px 0px 5px 10px" : "5px 10px 5px 0px" };
 `;

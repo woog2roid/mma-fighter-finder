@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FontWeight } from '../../utils/FontWeight';
-import { ColorCollection } from '../../utils/ColorCollection';
+import { FontWeight } from '../../styles/FontWeight';
+import { ColorCollection } from '../../styles/ColorCollection';
 
 const Wrapper = styled.div`
     background-color: ${ColorCollection.DARK_GRAY};

@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import qs from 'qs';
 import axios from 'axios';
 import styled from 'styled-components';
-import { ColorCollection } from '../../utils/ColorCollection';
-import { FontWeight } from '../../utils/FontWeight';
+import { ColorCollection } from '../../styles/ColorCollection';
+import { FontWeight } from '../../styles/FontWeight';
 import FighterData from './FighterData';
 
 const LoadingWrapper = styled.div`

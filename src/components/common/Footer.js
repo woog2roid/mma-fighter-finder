@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import GithubMark from '../../images/GitHub-Mark.svg';
-import { ColorCollection } from '../../utils/ColorCollection';
-import { FontWeight } from '../../utils/FontWeight';
+import { ColorCollection } from '../../styles/ColorCollection';
+import { FontWeight } from '../../styles/FontWeight';
 
 const FooterWrapper = styled.div`
     background-color: ${ColorCollection.DARK_GRAY};

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FontWeight } from '../../utils/FontWeight';
+import { FontWeight } from '../../styles/FontWeight';
 import FightEvent from './FightEvent';
 
 const Wrapper = styled.div`
@@ -93,7 +93,7 @@ const FightMain = styled.div`
 
 const FighterData = ({ data }) => {
     const { name, nickname, age, nationality, height, weight_class, association, birthday, hometown, location,
-        wins, losses, fights } = data;
+        wins, losses, fights, no_contests } = data;
     
     return (
         <Wrapper>
@@ -110,7 +110,7 @@ const FighterData = ({ data }) => {
                 <TR><TD>Location</TD><TD>{location || "?"}</TD></TR>
             </Profile>
 
-            <RecordMain>{wins.total} - {losses.total}</RecordMain>
+            <RecordMain>{wins.total} - {losses.total} - {no_contests}</RecordMain>
             <RecordComain>WINS BY</RecordComain>
             <RecordDetail>{wins.knockouts} KO, {wins.submissions} submissions, {wins.decisions} decisions, {wins.others} ohters</RecordDetail>
             <RecordComain>LOSSES BY</RecordComain>
