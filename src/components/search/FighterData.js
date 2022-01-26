@@ -2,9 +2,25 @@ import React from 'react';
 import styled from 'styled-components';
 import { FontWeight } from '../../styles/FontWeight';
 import FightEvent from './FightEvent';
+import { ColorCollection } from '../../styles/ColorCollection';
 
 const Wrapper = styled.div`
     text-align: center;
+`;
+const Sherdog = styled.a`
+	display: block;
+	text-decoration: none;
+    color: white;
+	text-align: right;
+	@media all and (max-width:767px) {
+        font-size: 14px;
+    }
+    @media all and (min-width:768px) and (max-width:1080px) {
+        font-size: 20px;
+    }
+    @media all and (min-width:1081px) {
+        font-size: 20px;
+    }
 `;
 const Main = styled.div`
     font-weight: ${FontWeight.BOLD};
@@ -93,21 +109,24 @@ const FightMain = styled.div`
 
 const FighterData = ({ data }) => {
     const { name, nickname, age, nationality, height, weight_class, association, birthday, hometown, location,
-        wins, losses, fights, no_contests } = data;
+        wins, losses, fights, no_contests, url } = data;
     
     return (
         <Wrapper>
+			<Sherdog href={url} target='_blank' rel="noreferrer">
+				Go to <b>Sherdog</b> for details▶
+			</Sherdog>
             <Main>{ name }</Main>
             <Profile>
-	            <TR><TD>Ring Name</TD><TD>{nickname || "?"}</TD></TR>
-                <TR><TD>Age</TD><TD>{age || "?"}</TD></TR>
-                <TR><TD>Nationality</TD><TD>{nationality || "?"}</TD></TR>
-                <TR><TD>Height</TD><TD>{height || "?"}</TD></TR>
-                <TR><TD>Wieght Class</TD><TD>{weight_class || "?"}</TD></TR>
-                <TR><TD>Association</TD><TD>{association || "?"}</TD></TR>
-                <TR><TD>Birthday</TD><TD>{birthday || "?"}</TD></TR>
-                <TR><TD>Hometown</TD><TD>{hometown || "?"}</TD></TR>
-                <TR><TD>Location</TD><TD>{location || "?"}</TD></TR>
+				<tbody><TR><TD>Ring Name</TD><TD>{nickname || "?"}</TD></TR></tbody>
+				<tbody><TR><TD>Age</TD><TD>{age || "?"}</TD></TR></tbody>
+				<tbody><TR><TD>Nationality</TD><TD>{nationality || "?"}</TD></TR></tbody>
+				<tbody><TR><TD>Height</TD><TD>{height || "?"}</TD></TR></tbody>
+				<tbody><TR><TD>Wieght Class</TD><TD>{weight_class || "?"}</TD></TR></tbody>
+				<tbody><TR><TD>Association</TD><TD>{association || "?"}</TD></TR></tbody>
+				<tbody><TR><TD>Birthday</TD><TD>{birthday || "?"}</TD></TR></tbody>
+				<tbody><TR><TD>Hometown</TD><TD>{hometown || "?"}</TD></TR></tbody>
+				<tbody><TR><TD>Location</TD><TD>{location || "?"}</TD></TR></tbody>
             </Profile>
 
             <RecordMain>{wins.total} - {losses.total} - {no_contests}</RecordMain>

@@ -10,10 +10,8 @@ const Wrapper = styled.div`
     text-align: ${props => props.result === "win" ? "left" : "right"};
     padding: ${props => props.result === "win" ? "5px 0px 5px 10px" : "5px 10px 5px 0px" };
 `;
-const Main = styled.a`
+const Main = styled.div`
     font-weight: ${FontWeight.NORMAL};
-    text-decoration: none;
-    color: white;
     @media all and (max-width:767px) {
         font-size: 15px;
     }
