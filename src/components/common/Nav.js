@@ -62,8 +62,8 @@ const NavItems = styled(Link)`
 const Nav = () => {
     return (
         <NavWrapper>
-            <NavMain to="/mma-fighter-finder">MMA FIGHTER FINDER</NavMain>
-            <NavItems to="/mma-fighter-finder/about">ABOUT</NavItems>
+            <NavMain to="/">MMA FIGHTER FINDER</NavMain>
+            <NavItems to="/about">ABOUT</NavItems>
         </NavWrapper>
     );
 };

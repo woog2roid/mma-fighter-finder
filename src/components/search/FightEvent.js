@@ -64,7 +64,7 @@ const FightEvent = ({ fight }) => {
 	
 	const goToOpponent = (e) => {
 		e.preventDefault();
-    	history.push(`/mma-fighter-finder/search?fighter=${opponent}`);
+    	history.push(`/search?fighter=${opponent}`);
 	};
 	
     return (

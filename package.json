@@ -20,8 +20,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "cname": "echo mma.woog2roid.dev > build\\CNAME",
+    "predeploy": "npm run build && npm run cname",
+    "deploy": "gh-pages --add -d build"
   },
   "eslintConfig": {
     "extends": [
