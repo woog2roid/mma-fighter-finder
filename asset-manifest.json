@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/static/js/main.7b752375.chunk.js",
-    "main.js.map": "/static/js/main.7b752375.chunk.js.map",
+    "main.js": "/static/js/main.a7a3f5fe.chunk.js",
+    "main.js.map": "/static/js/main.a7a3f5fe.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.602a7f53.js",
     "runtime-main.js.map": "/static/js/runtime-main.602a7f53.js.map",
-    "static/js/2.bee4e4a1.chunk.js": "/static/js/2.bee4e4a1.chunk.js",
-    "static/js/2.bee4e4a1.chunk.js.map": "/static/js/2.bee4e4a1.chunk.js.map",
+    "static/js/2.2d4d765d.chunk.js": "/static/js/2.2d4d765d.chunk.js",
+    "static/js/2.2d4d765d.chunk.js.map": "/static/js/2.2d4d765d.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.bee4e4a1.chunk.js.LICENSE.txt": "/static/js/2.bee4e4a1.chunk.js.LICENSE.txt",
+    "static/js/2.2d4d765d.chunk.js.LICENSE.txt": "/static/js/2.2d4d765d.chunk.js.LICENSE.txt",
     "static/media/GitHub-Mark.2652e38f.svg": "/static/media/GitHub-Mark.2652e38f.svg",
     "static/media/ufc_octagon.b32d8365.jpg": "/static/media/ufc_octagon.b32d8365.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.602a7f53.js",
-    "static/js/2.bee4e4a1.chunk.js",
-    "static/js/main.7b752375.chunk.js"
+    "static/js/2.2d4d765d.chunk.js",
+    "static/js/main.a7a3f5fe.chunk.js"
   ]
 }
